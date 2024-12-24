@@ -1,84 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
-    <style>
-        /* Dark mode styling */
-        body {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .hero {
-            background-color: #1f1f1f;
-        }
-        .tile {
-            background-color: #1e1e2f;
-            color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .tile:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-        }
-        a {
-            color: #48c774; /* Bulma's green */
-            text-decoration: none;
-        }
-        a:hover {
-            color: #32a55c;
-        }
-        .footer {
-            background-color: #1f1f1f;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
     <!-- Hero Section -->
-    <section id="herosection" class="hero is-medium is-bold">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="title has-text-white">
-                <span id="typing-animation"></span> <!-- Dynamic text -->
-            </h1>
-            <h2 class="subtitle has-text-grey-light">
-                Developer | Designer | Creator
-            </h2>
+    <section class="hero is-medium is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title has-text-white">
+                    <span id="typing-animation"></span> <!-- Dynamic text -->
+                </h1>
+                <h2 class="subtitle has-text-grey-light">
+                    Developer | Designer | Creator
+                </h2>
+                <!-- Icons -->
+                <div class="icon-container mt-4">
+                    <a href="mailto:jdrprocopio@gmail.com" id="emailicon" class="icon header-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/jarrenprocopio" target="_blank" id="githubicon" class="icon header-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Projects Section -->
-    <section class="section">
+    <section id="herosection" class="section">
         <div class="container">
             <h2 class="title has-text-white has-text-centered">My Projects</h2>
             <div class="tile is-ancestor">
                 <div class="tile is-parent">
                     <article class="tile is-child">
-                        <p class="title">Project One</p>
-                        <p>A short description of what this project is about. Built using X, Y, and Z.</p>
-                        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                        <p class="title is-size-4 has-text-white">Military AIT Out Processing Website</p>
+                        <p class="subtitle is-size-5 has-text-grey-light">
+                            A full-stack web application developed to streamline the AIT out processing experience. Built with HTML, the Bulma CSS framework, and plain JavaScript for the frontend,
+                            while utilizing Python's Flask for the backend. This project highlights my skills in both frontend and backend development.
+                        </p>
+                        <a href="https://github.com/jarrenprocopio/AIT-Sample-Website" target="_blank" class="button is-link is-light">View on GitHub</a>
                     </article>
                 </div>
+
                 <div class="tile is-parent">
                     <article class="tile is-child">
-                        <p class="title">Project Two</p>
-                        <p>A short description of this project. Includes features such as A, B, and C.</p>
-                        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                        <p class="title is-size-4 has-text-white">Amazon Price Tracker Framework</p>
+                        <p class="subtitle is-size-5 has-text-grey-light">
+                            a Python-based framework designed to monitor the price of specific products on Amazon.
+                            When the price falls below a predetermined threshold,
+                            the framework can be extended to trigger alerts and integrate with broader systems.
+                        </p>
+                        <a href="https://github.com/jarrenprocopio/Amazon-Price-Tracker-Framework" target="_blank" class="button is-link is-light">View on GitHub</a>
                     </article>
                 </div>
+
                 <div class="tile is-parent">
                     <article class="tile is-child">
-                        <p class="title">Project Three</p>
-                        <p>A brief overview of this project and its purpose. Created using tools like D, E, and F.</p>
-                        <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+                        <p class="title is-size-4 has-text-white">Mass JSON to CSV Converter</p>
+                        <p class="subtitle is-size-5 has-text-grey-light">
+                            This Python script converts all valid JSON files in the current directory to CSV format.
+                            It reads each .json file, parses its content, and generates a corresponding .csv file with the same base name.
+                        </p>
+                        <a href="https://github.com/jarrenprocopio/json-to-csv" target="_blank" class="button is-link is-light">View on GitHub</a>
                     </article>
                 </div>
             </div>
@@ -88,59 +77,13 @@
     <!-- Footer Section -->
     <footer class="footer">
         <p class="has-text-grey-light">
-            © 2024 Jarren Procopio | <a href="mailto:your.email@example.com">Contact Me</a>
-        </p>
-        <p class="has-text-grey-light">
-            Find me on <a href="https://github.com/jarrenprocopio" target="_blank">GitHub</a>.
+            © 2024 Jarren Procopio
         </p>
     </footer>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const element = document.getElementById("typing-animation");
-        const words = ["Hello, I'm Jarren!", "Welcome to My Portfolio!"];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function type() {
-            const currentWord = words[wordIndex];
-            const currentText = isDeleting
-                ? currentWord.substring(0, charIndex--)
-                : currentWord.substring(0, charIndex++);
-            
-            element.textContent = currentText;
-
-            if (!isDeleting && charIndex === currentWord.length) {
-                // Pause after typing
-                setTimeout(() => (isDeleting = true), 250);
-            } else if (isDeleting && charIndex === 0) {
-                // Switch to the next word after deleting
-                wordIndex = (wordIndex + 1) % words.length;
-                isDeleting = false;
-            }
-
-            const typingSpeed = isDeleting ? 100 : 150;
-            setTimeout(type, typingSpeed);
-        }
-
-        type();
-    });
-</script>
-<script src="three.r134.min.js"></script>
-<script src="vanta.globe.min.js"></script>
-<script>
-VANTA.GLOBE({
-  el: "#herosection",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00
-})
-</script>
-
-</body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script src="scripts/typing.js"></script>
+    <script src="scripts/vanta.js"></script>
+    </body>
+    </html>
