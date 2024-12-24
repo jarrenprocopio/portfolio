@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dark mode styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+.hero {
+    background-color: #1f1f1f;
+}
+
+.hero-body .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    25% {
+        transform: translateY(-5px); /* Slightly move up */
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0); /* Return to starting position */
+    }
+}
+
+@keyframes float-reverse {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    25% {
+        transform: translateY(5px); /* Move up */
+    }
+    50% {
+        transform: translateY(-5px); /* Move down */
+    }
+    75% {
+        transform: translateY(5px); /* Move up again */
+    }
+    100% {
+        transform: translateY(0); /* Return to starting position */
+    }
+}
+
+
+/* Apply the float animation to the title */
+#emailicon {
+    animation: float 8s ease-in-out infinite; /* 3s duration, ease in/out, loop infinitely */
+}
+
+#githubicon {
+    animation: float-reverse 8s ease-in-out infinite;
+}
+
+
+.tile {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+a {
+    color: #48c774; /* Bulma's green */
+    text-decoration: none;
+}
+a:hover {
+    color: #32a55c;
+}
+.footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header icons hover effects */
+.header-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #48c774;
+    transition: color 0.3s, transform 0.3s;
+}
+.header-icon:hover {
+    color: #32a55c;
+    transform: scale(1.2);
+}
+
+#typing-animation::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusts spacing between icons */
+}
+
+.header-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #48c774;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header-icon:hover {
+    color: #32a55c;
+    transform: scale(1.2);
+}
