@@ -98,7 +98,7 @@
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         const element = document.getElementById("typing-animation");
-        const words = ["Hello, I'm [Your Name]", "Welcome to My Portfolio"];
+        const words = ["Hello, I'm Jarren!", "Welcome to My Portfoli!"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -113,7 +113,7 @@
 
             if (!isDeleting && charIndex === currentWord.length) {
                 // Pause after typing
-                setTimeout(() => (isDeleting = true), 1000);
+                setTimeout(() => (isDeleting = true), 250);
             } else if (isDeleting && charIndex === 0) {
                 // Switch to the next word after deleting
                 wordIndex = (wordIndex + 1) % words.length;
