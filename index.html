@@ -41,7 +41,7 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero is-medium is-bold">
+    <section id="herosection" class="hero is-medium is-bold">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title has-text-white">
@@ -126,6 +126,20 @@
 
         type();
     });
+</script>
+<script src="three.r134.min.js"></script>
+<script src="vanta.globe.min.js"></script>
+<script>
+VANTA.GLOBE({
+  el: "#herosection",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
 </script>
 
 </body>
